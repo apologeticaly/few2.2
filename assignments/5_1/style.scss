@@ -1,0 +1,59 @@
+/* Container styles */
+$size: 200px;
+$size-small: 120px;
+$border-line: 1px solid;
+
+
+/* Sets container params */
+.container {
+  width: $size;
+  height: $size;
+  border: $border-line;
+  position: relative;
+}
+
+/* Style all of the child divs */
+/* These styles shared by all children */
+.container > div {
+  position: absolute;
+  border-radius: 0 70% 40% 70%;
+  border: $border-line;
+  width: $size-small;
+  height: $size-small;
+  /* Position these in the center */
+  left: $size / 20;
+  top: $size / 4;
+  /* Rotate 45 deg points the point at the top */
+  transform: rotate(45deg);
+  /* Move the point of transformation to the lower right */
+  transform-origin: 90px 90px;
+  animation-duration: 6000ms;
+  animation-iteration-count: 1;
+  /* Important! Without this the elements will snap
+  to their starting positions when the animation ends! */
+  animation-fill-mode: forwards;
+}
+
+/* This is a function that returns a nth-child with different animation labels and background colors */
+@for $i from 1 through 5 {
+    $hue: 60 * $i;
+    .container > div:nth-child(#{$i}) {   animation-name: bloom-#{$i}; background-color: hsla($hue, 100%, 50%, 0.21); }
+}
+
+/* This is a function that the rotate keyframes for each div */
+@for $i from 1 through 5 {
+  $rotate: -45deg, 135deg, 45deg, 0deg, 90deg;
+  @keyframes bloom-#{$i} {
+    0% { transform: rotate(45deg); }
+    100% { transform: rotate(nth($rotate, $i)); }
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  html {
+    height: 100%;
+  }
+}

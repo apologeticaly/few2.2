@@ -1,0 +1,117 @@
+body {
+  background-color: #121212;
+}
+
+.canvas {
+  width: 1000px;
+  height: 600px;
+  margin: 20px;
+}
+.canvas div {
+  position: absolute;
+}
+
+@keyframes opacityKeys {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+.block-1 {
+  width: 360px;
+  height: 110px;
+  background-color: #3c4681;
+  animation: 4s ease-in 0s 1 opacityKeys;
+}
+
+.block-2 {
+  width: 450px;
+  height: 45px;
+  transform: translate(380px, 0px);
+  animation: 6s ease-in 0s 1 opacityKeys;
+  background-color: #d42627;
+}
+
+.block-3 {
+  width: 150px;
+  height: 480px;
+  transform: translate(850px, 0px);
+  animation: 2s ease-in 0s 1 opacityKeys;
+  background-color: #FFF2FF;
+}
+
+.block-4 {
+  width: 291px;
+  height: 280px;
+  transform: translate(380px, 65px);
+  animation: 4s ease-in 0s 1 opacityKeys;
+  background-color: #fcd202;
+}
+
+.block-5 {
+  width: 135px;
+  height: 280px;
+  transform: translate(693px, 65px);
+  animation: 2s ease-in 0s 1 opacityKeys;
+  background-color: #FFF2FF;
+}
+
+.block-6 {
+  width: 72px;
+  height: 215px;
+  transform: translate(288px, 130px);
+  animation: 4s ease-in 0s 1 opacityKeys;
+  background-color: #FFF2FF;
+}
+
+.block-7 {
+  width: 268px;
+  height: 400px;
+  transform: translate(0px, 130px);
+  animation: 4s ease-in 0s 1 opacityKeys;
+  background-color: #FFF2FF;
+}
+
+.block-8 {
+  width: 140px;
+  height: 164px;
+  transform: translate(288px, 365px);
+  animation: 2s ease-in 0s 1 opacityKeys;
+  background-color: #3c4681;
+}
+
+.block-9 {
+  width: 380px;
+  height: 116px;
+  transform: translate(448px, 365px);
+  animation: 4s ease-in 0s 1 opacityKeys;
+  background-color: #d42627;
+}
+
+.block-10 {
+  width: 427px;
+  height: 50px;
+  transform: translate(0, 549px);
+  animation: 4s ease-in 0s 1 opacityKeys;
+  background-color: #fcd202;
+}
+
+.block-11 {
+  width: 265px;
+  height: 93px;
+  transform: translate(448px, 505px);
+  animation: 4s ease-in 0s 1 opacityKeys;
+  background-color: #FFF2FF;
+}
+
+.block-12 {
+  width: 265px;
+  height: 93px;
+  animation: 2s ease-in 0s 1 opacityKeys;
+  transform: translate(735px, 505px);
+  background-color: #3c4681;
+}
+
+/*# sourceMappingURL=style.css.map */

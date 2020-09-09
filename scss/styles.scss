@@ -1,0 +1,35 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$johnny: 20px;
+
+
+@function colormargin($color) {
+    @if $color == black {
+        $result: 50px;
+        @return $result;
+    }
+    
+    @else {
+        $result: 25px;
+        @return $result;
+    }
+}
+
+body {
+  font: 100% $font-stack;
+  font-size: $johnny * 2;
+  color: $primary-color;
+}
+
+.div1 {
+    margin: colormargin(black);
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.div2 {
+    margin: colormargin(red);
+    text-align: center;
+    background-color: red;
+}

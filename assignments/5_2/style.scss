@@ -1,0 +1,140 @@
+$fast-animation: 2s ease-in 0s 1 opacityKeys;
+$medium-animation: 4s ease-in 0s 1 opacityKeys;
+$slow-animation: 6s ease-in 0s 1 opacityKeys;
+$red: #d42627;
+$blue: #3c4681;
+$white: #FFF2FF;
+$yellow: #fcd202;
+
+body {
+    background-color: #121212;
+}
+
+.canvas {
+    width: 1000px;
+    height: 600px;
+    margin: 20px;
+
+    div {
+        position: absolute;
+    }
+}
+
+@keyframes opacityKeys {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+.block-1 {
+    width: 360px;
+    height: 110px;
+
+    background-color: $blue;
+    animation: $medium-animation;
+}
+
+.block-2 {
+    width: 450px;
+    height: 45px;
+
+    transform: translate(380px, 0px);
+    animation: $slow-animation;
+    background-color: $red;
+}
+
+
+.block-3 {
+    width: 150px;
+    height: 480px;
+
+    transform: translate(850px, 0px);
+    animation: $fast-animation;
+    background-color: $white;
+}
+
+.block-4 {
+    width: 291px;
+    height: 280px;
+
+    transform: translate(380px, 65px);
+    animation: $medium-animation;
+    background-color: $yellow;
+}
+
+
+.block-5 {
+    width: 135px;
+    height: 280px;
+
+    transform: translate(693px, 65px);
+    animation: $fast-animation;
+    background-color: $white
+}
+
+.block-6 {
+    width: 72px;
+    height: 215px;
+
+    transform: translate(288px, 130px);
+    animation: $medium-animation;
+    background-color: $white
+}
+
+.block-7 {
+    width: 268px;
+    height: 400px;
+
+    transform: translate(0px, 130px);
+    animation: $medium-animation;
+    background-color: $white
+}
+
+.block-8 {
+    width: 140px;
+    height: 164px;
+
+    transform: translate(288px, 365px);
+    animation: $fast-animation;
+    background-color: $blue
+}
+
+.block-9 {
+    width: 380px;
+    height: 116px;
+
+    transform: translate(448px, 365px);
+    animation: $medium-animation;
+    background-color: $red
+}
+
+.block-10 {
+    width: 427px;
+    height: 50px;
+
+    transform: translate(0, 549px);
+    animation: $medium-animation;
+    background-color: $yellow;
+}
+
+.block-11 {
+    width: 265px;
+    height: 93px;
+
+    transform: translate(448px, 505px);
+    animation: $medium-animation;
+    background-color: $white
+}
+
+.block-12 {
+    width: 265px;
+    height: 93px;
+    animation: $fast-animation;
+
+    transform: translate(735px, 505px);
+    background-color: $blue
+}

@@ -1,0 +1,15 @@
+body {
+    background-color: rgba(211, 211, 211, 0.441);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    align-items: center;
+    margin: 2rem;
+}

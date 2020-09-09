@@ -1,0 +1,20 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  font-size: 40px;
+  color: #333;
+}
+
+.div1 {
+  margin: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.div2 {
+  margin: 25px;
+  text-align: center;
+  background-color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

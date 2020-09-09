@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height: 200; display: grid; grid-template-columns: repeat(3, 250px);">
+        <!-- Button 1 -->
+        <div class="grid">
+            <button class="button-1">Hello</button>
+
+        <style>
+            body {
+                background-color: rgba(211, 211, 211, 0.441);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .grid {
+                display: flex;
+                height: 200px;
+                width: 200px;
+                background-color: white;
+                align-items: center;
+                margin: 2rem;
+            }
+            .button-1 {
+                width: 150px;
+                height: 50px;
+                margin: auto;
+                font-size: 1.5rem;
+                color: white;
+                background-color: steelblue;
+                border-radius: .5rem;
+                border: none;
+                transition: 350ms;
+            }
+            .button-1:hover {
+                width: 150px;
+                height: 50px;
+                margin: auto;
+                font-size: 1.5rem;
+                color: steelblue;
+                background-color: white;
+                border-radius: .5rem;
+                border: 1px solid steelblue;
+            }
+        </style>
+        </div>
+
+        <!-- Button 2 -->
+        <div class="grid">
+            <button class="button-2">Hello</button>
+
+            <style>
+                .button-2 {
+                    width: 150px;
+                    height: 50px;
+                    margin: auto;
+                    font-size: 1.5rem;
+                    color: steelblue;
+                    background-color: white;
+                    border: none;
+                    transition: 350ms;
+                }
+                .button-2:hover {
+                    width: 150px;
+                    height: 50px;
+                    margin: auto;
+                    font-size: 1.5rem;
+                    letter-spacing: .5rem;
+                    color: steelblue;
+                    background-color: white;
+                    border: 4px solid steelblue;
+                    border-right: none;
+                    border-left: none;
+                }
+            </style>
+        </div>
+
+        <!-- Button 3 -->
+        <div class="grid">
+            <button class="button-3">Hello</button>
+
+        <style>
+            .button-3 {
+                width: 150px;
+                height: 50px;
+                margin: auto;
+                font-size: 1.5rem;
+                color: steelblue;
+                background-color: white;
+                border-radius: .5rem;
+                border: 1px solid steelblue;
+            }
+            .button-3:hover {
+                width: 150px;
+                height: 50px;
+                margin: auto;
+                font-size: 1.5rem;
+                color: white;
+                background-color: steelblue;
+                border-radius: .5rem;
+                border: none;
+                transition: 350ms;
+            }
+        </style>
+        </div>
+
+        <!-- Hamburger 1 -->
+        <div class="grid temp">
+            <div class="l">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        <style>
+            .temp {
+                transition: 200ms;
+            }
+            .temp:hover{
+                background-color: black;
+                transition: 200ms;
+            }
+
+            .temp:hover>.l>div{
+                background-color: white;
+                transition: 200ms;
+            }
+
+            .l>div {
+                width: 150px;
+                height: 25px;
+                background-color: black;
+                position: absolute;
+                transition: 200ms;
+            }
+
+            .l:hover>div {
+                width: 150px;
+                height: 25px;
+                background-color: white;
+                position: absolute;
+                transition: 200ms;
+            }
+
+            .l>div:nth-child(1) {
+                transform: translate(25px, -60px) rotate(0);
+                transition: 200ms;
+            }
+
+            .temp:hover>.l>div:nth-child(1) {
+                transform: translate(25px, -10px) rotate(-45deg);
+                transition: 200ms;
+            }
+
+            .l>div:nth-child(2) {
+                transform: translate(25px, -10px) rotate(0);
+                transition: 200ms;
+            }
+
+            .temp:hover>.l>div:nth-child(3) {
+                transform: translate(25px, -10px) rotate(45deg);
+                transition: 200ms;
+            }
+
+            .l>div:nth-child(3) {
+                transform: translate(25px, 40px) rotate(0);
+                transition: 200ms;
+            }
+
+            .temp:hover>.l>div:nth-child(2) {
+                opacity: 0;
+                transition: 200ms;
+            }
+
+
+        </style>
+        </div>
+
+        <!-- Hamburger 2 -->
+        <div class="grid temp">
+            <div class="m">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        <style>
+            .temp {
+                transition: 200ms;
+            }
+            .temp:hover{
+                background-color: black;
+                transition: 200ms;
+            }
+
+            .temp:hover>.m>div{
+                background-color: white;
+                transition: 200ms;
+            }
+
+            .m>div {
+                width: 150px;
+                height: 25px;
+                background-color: black;
+                position: absolute;
+                transition: 200ms;
+            }
+
+            .m:hover>div {
+                width: 150px;
+                height: 25px;
+                background-color: white;
+                position: absolute;
+                transition: 200ms;
+            }
+
+            .m>div:nth-child(1) {
+                transform: translate(25px, -60px) rotate(0);
+                transition: 200ms;
+            }
+
+            .temp:hover>.m>div:nth-child(1) {
+                transform: translate(0px, -40px) rotate(-45deg);
+                width: 110px;
+                transition: 200ms;
+            }
+
+            .m>div:nth-child(2) {
+                transform: translate(25px, -10px) rotate(0);
+                transition: 200ms;
+            }
+
+            .temp:hover>.m>div:nth-child(2) {
+                transition: 200ms;
+            }
+
+            .m>div:nth-child(3) {
+                transform: translate(25px, 40px) rotate(0);
+                transition: 200ms;
+            }
+
+            .temp:hover>.m>div:nth-child(3) {
+                transform: translate(0px, 20px) rotate(45deg);
+                width: 110px;
+                transition: 200ms;
+            }
+
+        </style>
+        </div>
+
+        <!-- Hamburger 3 -->
+        <div class="grid temp_1">
+            <div class="n">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="circle"></div>
+
+        <style>
+            .temp_1 {
+                transition: 200ms;
+            }
+            .temp_1:hover{
+                background-color: black;
+                transition: 200ms;
+            }
+
+            .temp_1:hover>.n>div{
+                background-color: white;
+                transition: 200ms;
+            }
+
+            .n>div {
+                width: 150px;
+                height: 25px;
+                background-color: black;
+                position: absolute;
+                transition: 200ms;
+            }
+
+            .temp_1>.circle {
+                opacity: 0;
+            }
+
+
+            .temp_1:hover>.circle {
+                opacity: 100;
+                width: 125px;
+                height: 125px;
+                border-radius: 150px;
+                position: absolute;
+                transform: translate(15px, 0px) rotate(0);
+                border: 20px white solid;
+                transition: 200ms;
+            }
+
+            .temp_1:hover>.n>div {
+                width: 75px;
+                height: 20px;
+                background-color: white;
+                position: absolute;
+                transition: 200ms;
+            }
+
+            .n>div:nth-child(1) {
+                transform: translate(25px, -60px) rotate(0);
+                transition: 200ms;
+            }
+
+            .temp_1:hover>.n>div:nth-child(1) {
+                transform: translate(60px, -10px) rotate(-45deg);
+                transition: 200ms;
+            }
+
+            .n>div:nth-child(2) {
+                transform: translate(25px, -10px) rotate(0);
+                transition: 200ms;
+            }
+
+            .temp_1:hover>.n>div:nth-child(3) {
+                transform: translate(60px, -10px) rotate(45deg);
+                transition: 200ms;
+            }
+
+            .n>div:nth-child(3) {
+                transform: translate(25px, 40px) rotate(0);
+                transition: 200ms;
+            }
+
+            .temp_1:hover>.n>div:nth-child(2) {
+                opacity: 0;
+                transition: 200ms;
+            }
+
+
+        </style>
+        </div>
+
+        <!-- Kitten 1 -->
+        <div class="grid kitten_1">
+            <div class="kitten_n">
+                <img class="kitten_img" src="./kitten-domo.jpg" >
+            </div>
+            <div class="circle"></div>
+
+        <style>
+            .kitten_1 {
+                display: flex;
+                align-items: center;
+                transition: 200ms;
+                overflow: hidden;
+            }
+
+            .kitten_n {
+                margin: 0 auto;
+                overflow: hidden;
+            }
+
+            .kitten_n:hover>img{
+                align-self: center;
+                transform: rotate(10deg);
+                max-height: 15rem;
+            }
+
+            .kitten_img {
+                align-self: center;
+                transition: 200ms;
+                max-height: 12rem;
+            }
+
+            .kitten_img:hover {
+                align-self: center;
+                transform: rotate(10deg);
+                max-height: 15rem;
+            }
+
+
+        </style>
+        </div>
+
+        <!-- Kitten 2 -->
+        <div class="grid kitten_1">
+            <div class="kitten_2_n">
+                <img class="kitten_2_img" src="./kitten-domo.jpg" >
+                <p class="kitten_text">Domo Kitten</p>
+            </div>
+
+        <style>
+            .kitten_1 {
+                display: flex;
+                align-items: center;
+                transition: 200ms;
+                overflow: hidden;
+            }
+
+            .kitten_text {
+                transform: translate(200px, 0px) rotate(0);
+                background: #FFF;
+                position: absolute;
+                padding: 0.5rem 0rem 0.5rem 0.5rem;
+                transition: 600ms;
+ 
+            }
+
+            div.kitten_2_n:hover>p.kitten_text {
+                position: absolute;
+                transform: translate(70px, 0px) rotate(0);
+                padding: 0.5rem 2.5rem 0.5rem 1.5rem;
+                transition: 600ms;
+                transition-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045);
+            }
+
+            .kitten_2_n {
+                margin: 0 auto;
+                position: relative;
+                width: 100%
+            }
+
+            .kitten_2_img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) scale(0.65) rotate(0);
+                transition: 400ms;
+            }
+
+            .kitten_2_img:hover {
+                transform: translate(-50%, -50%) scale(0.95) rotate(10deg);
+                max-height: 15rem;
+            }
+
+
+        </style>
+        </div>
+
+        <!-- Kitten 3 -->
+        <div class="grid kitten_1">
+            <div class="kitten_2_n">
+                <img class="kitten_2_img" src="./kitten-domo.jpg" >
+                <p class="kitten_3_text">Domo Kitten</p>
+                <p class="price">$10</p>
+            </div>
+
+        <style>
+            .kitten_1 {
+                display: flex;
+                align-items: center;
+                transition: 200ms;
+                overflow: hidden;
+            }
+
+            .price {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                position: absolute;
+                left: -14px;
+                top: -14px;
+                background-color: red;
+                color: #fff;
+                font-size: 24px;
+                line-height: 100px;
+                margin: 0;
+                text-align: center;
+                transition: 600ms;
+                transition-timing-function: ease-in-out;
+                transition-delay: 100ms;
+                transform: translate(-200px, -200px) scale(0.5);
+            }
+
+            .kitten_3_text {
+                transform: translate(70px, 0px) rotate(0);
+                background: #FFF;
+                position: absolute;
+                padding: 0.5rem 0rem 0.5rem 0.5rem;
+                transition: 600ms;
+ 
+            }
+
+            div.kitten_2_n:hover>p.price {
+                transform: translate(-10px,-100px) scale(1);
+            }
+
+            div.kitten_2_n:hover>p.kitten_3_text {
+                position: absolute;
+                transform: translate(200px, 0px) rotate(0);
+                padding: 0.5rem 2.5rem 0.5rem 1.5rem;
+                transition: 600ms;
+                transition-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045);
+            }
+
+            .kitten_2_n {
+                margin: 0 auto;
+                position: relative;
+                width: 100%
+            }
+
+            .kitten_2_img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) scale(0.65) rotate(0);
+                transition: 400ms;
+            }
+
+            .kitten_2_img:hover {
+                transform: translate(-50%, -50%) scale(0.95) rotate(10deg);
+                max-height: 15rem;
+            }
+
+
+        </style>
+        </div>
+
+        
+    </div>
+
+    
+        
+
+    
+</body>
+</html>
